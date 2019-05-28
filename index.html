@@ -11,10 +11,32 @@
   <script src="index.js"></script>
 </head>
 
-<body id="body" class="dark
--mode">
-  <!---------------------------------------------- Search Bar -------------------------------------------------->
+<body id="body" class="light-mode">
+  <!-------------------------------------------Menu Starts--------------------------------------->
+  <div class="outer-menu">
+    <input class="checkbox-toggle" type="checkbox" />
+    <div class="hamburger">
+      <div></div>
+    </div>
+    <div class="menu">
+      <div>
+        <div>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!----------------------------------------------Menu Ends-------------------------------------->
+
   <button type="button" name="dark_light" onclick="toggleDarkLight()" title="Toggle dark/light mode">🌛</button>
+
+  <!---------------------------------------------- Search Bar Starts------------------------------------------->
+
   <div class="container-fluid search_container">
     <!-- <p class="text-center title"> TUTSBITS</p> -->
     <div class="search-bar">
@@ -25,8 +47,9 @@
       </main>
     </div>
   </div>
+  <!------------------------------------------- Search Bar Ends ----------------------------------------------->
 
-
+  <!------------------------------------------ bar for title & sleect  ---------------------------------------->
   <div class="container-fluid content">
     <div class="row title-bar">
       <div class="col-md-10 select">
@@ -44,6 +67,8 @@
         </select>
       </div>
     </div>
+
+    <!-------------------------------- tuts Container this should Auto Populate ----------------------------------->
     <div class="tuts-container">
       <div class="tuts-list floating"> 1</div>
       <div class="tuts-list floating"> 2</div>

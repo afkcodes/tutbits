@@ -1,3 +1,4 @@
+// Search Bar/Box Animation  
 $(document).ready(function() {
   $('.search').click(function() {
     $('.search').addClass('active');
@@ -26,22 +27,23 @@ $(document).ready(function() {
   });
 });
 
-function dark() {
-  if (document.body.style.backgroundColor == 'rgb(255, 255, 255)') {
-
-    document.body.style.backgroundColor = '#333';
-    document.body.style.color = '#fff';
-  } else {
-    document.body.style.backgroundColor = 'rgb(255, 255, 255)';
-    document.getElementsByTagName('div').style.backgroundColor = '#333';
-    document.body.style.color = '#000';
-  }
-}
-
+// Dark Mode Function need to set to localstorage for better detection.
 function toggleDarkLight() {
   var body = document.getElementById("body");
   var currentClass = body.className;
-  body.className = currentClass == "dark-mode" ? "light-mode" : "dark-mode"
+  body.className = currentClass == "dark-mode" ? "light-mode" : "dark-mode";
 
-  ;
+  if (currentClass === "light-mode") {
+    document.querySelector(".floating").style.backgroundColor = 'rgba(51, 49, 59, 0.97)';
+  } else {
+    document.querySelector(".floating").style.backgroundColor = '#eee351';
+  }
 }
+
+// Menu Toggle
+$(function() {
+  $('#nav-toggle').on('click', function() {
+    $('body').toggleClass('nav-open');
+  });
+
+});

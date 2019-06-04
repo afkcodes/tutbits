@@ -1,4 +1,4 @@
-// Search Bar/Box Animation
+// Search Bar/Box Animation  
 $(document).ready(function() {
   $('.search').click(function() {
     $('.search').addClass('active');
@@ -46,9 +46,4 @@ $(function() {
     $('body').toggleClass('nav-open');
   });
 
-});
-
-
-$(document).ready(function(){
-  $(".owl-carousel").owlCarousel();
 });

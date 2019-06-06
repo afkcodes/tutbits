@@ -34,9 +34,12 @@ function toggleDarkLight() {
   body.className = currentClass == "dark-mode" ? "light-mode" : "dark-mode";
 
   if (currentClass === "light-mode") {
-    document.querySelector(".floating").style.backgroundColor = 'rgba(51, 49, 59, 0.97)';
+    document.querySelector(".tuts-list").style.backgroundColor = '#6066E0';
+    document.querySelector(".search-bar").style.backgroundColor = '#1E2227';
   } else {
-    document.querySelector(".floating").style.backgroundColor = '#eee351';
+    document.querySelector(".search-bar").style.backgroundColor = '#6066E0';
+    document.querySelector(".footer").style.backgroundColor = '#6066E0';
+
   }
 }
 

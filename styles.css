@@ -1,5 +1,7 @@
 * {
   font-family: 'Nanum Gothic', sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 .search-bar {
@@ -7,7 +9,7 @@
   height: 50vh;
   margin: 0;
   padding: 0;
-  background: #222831;
+  background: #6066E0;
   /*background: url(images/bg_search.jpg);*/
   background-size: contain;
   display: flex;
@@ -17,7 +19,7 @@
 }
 
 body {
-  background-color: #fff;
+  background-color: #E6ECF0;
 }
 
 main {
@@ -95,9 +97,6 @@ main {
   width: 100%;
   margin: 0;
   padding: 0;
-  background: #222831;
-
-
 }
 
 .content {
@@ -115,6 +114,7 @@ main {
 
 .tuts-container {
   padding: 0;
+  width: 99%;
   margin: 0;
   list-style: none;
   display: -webkit-box;
@@ -124,22 +124,24 @@ main {
   display: flex;
 
   -webkit-flex-flow: row wrap;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .tuts-list {
-  background: lightgray;
+  background: #fff;
   padding: 2px;
   width: 300px;
   height: 150px;
   margin-top: 10px;
-  margin-left: 10px;
+  margin-left: 15px;
   line-height: 150px;
-  color: white;
+  color: black;
+  border-radius: 10px;
   font-weight: bold;
   font-size: 2em;
   text-align: center;
 
+  box-shadow: 0px 2px 2px grey;
 
 }
 
@@ -369,7 +371,7 @@ a:active {
 /*LIGHT & DARKMODE SWITCH*/
 
 body.dark-mode {
-  background-color: #222831;
+  background-color: #1E2227;
   color: #fff;
 
   a {
@@ -384,7 +386,7 @@ body.dark-mode {
 }
 
 body.light-mode {
-  background-color: #fff;
+  background-color: #eeeeee;
   color: #222831;
 
   a {
@@ -395,4 +397,42 @@ body.light-mode {
     background-color: #222831;
     color: #fff;
   }
+}
+
+
+/**************** MAIN ********************/
+.main {
+  height: 100%;
+  width: 100%;
+  margin-top: 15px;
+  margin-right: 0px;
+  padding: 0;
+  line-height: 2em;
+}
+
+.content-main p {
+  margin: 25px;
+}
+
+/*.container-fluid {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+
+}
+*/
+
+/****************FOOTER********************/
+
+.footer {
+  height: 250px;
+  margin: 0;
+  padding: 0;
+  bottom: 10px;
+  border-top-right-radius: 50%;
+  border-top-left-radius: 50%;
+  background: #6066E0;
+
+  z-index: 5;
+
 }

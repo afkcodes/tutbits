@@ -425,14 +425,26 @@ body.light-mode {
 /****************FOOTER********************/
 
 .footer {
-  height: 250px;
+  height: 270px;
   margin: 0;
   padding: 0;
   bottom: 10px;
   border-top-right-radius: 50%;
   border-top-left-radius: 50%;
   background: #6066E0;
-
+  margin-bottom: 0px;
   z-index: 5;
+   /* position: relative; */
+
+}
+
+.footer-content{
+  position: absolute;
+  height: 220px;
+  margin-top: 50px;
+  width: 100%;
+  border: 2px solid black;
+  margin-left: 20%;
+  color: #fff;
 
 }
